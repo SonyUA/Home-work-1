@@ -2,10 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 .wrapper {
     max-width: 1440px;
     padding: 10px;
+    background-color: #416f70ab;
 }
 .head {
     width: 100%;
@@ -30,6 +32,11 @@
 .title {
     color: #fff;
     font-size: 40px;
+}
+@media (max-width: 768px) {
+    .title{
+        font-size: 30px;
+    }
 }
 .main__box {
     
