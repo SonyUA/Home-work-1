@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="head">
+            <h1 class="title">Cheat sheet git</h1>
+            <img class="head__img" src="./img/github-brands.svg" alt="">
+        </header>
+        <main class="main">
+            <div class="main__inner">
+             <div class="main__box">
+                <span class="main__git">$ git config --global user.name "[имя]"</span><br> 
+                <span class="main__description">Устанавливает имя, которое будет отображаться в поле автора у выполняемых вами коммитов</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git config --global user.email "[адрес электронной почты]"</span><br>
+                <span class="main__description">Устанавливает адрес электронной почты, который будет отображаться в информации о выполняемых вами коммитах</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git init [название проекта]</span><br>
+                <span class="main__description">Создаёт новый локальный репозиторий с заданным именем</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git status</span><br>
+                <span class="main__description">Перечисляет все новые или изменённые файлы, которые нуждаются в фиксации</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git add [файл]</span><br>
+                <span class="main__description">Индексирует указанный файл для последующего коммита</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git commit -m "[сообщение с описанием]"</span><br>
+                <span class="main__description">Фиксирует проиндексированные изменения и сохраняет их в историю версий</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git log</span><br>
+                <span class="main__description">История коммитов для текущей ветки</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git checkout</span><br>
+                <span class="main__description">позволяет перемещаться между ветками, созданными командой git branch</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git branch</span><br>
+                <span class="main__description">Список именованных веток коммитов с указанием выбранной ветки</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git push [удалённый репозиторий] [ветка]</span><br>
+                <span class="main__description">Загружает все изменения локальной ветки в удалённый репозиторий</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git pull</span><br>
+                <span class="main__description">Загружает историю из удалённого репозитория и объединяет её с локальной. pull = fetch + merge</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git merge [удалённый репозиторий]/[ветка]</span><br>
+                <span class="main__description">Вносит изменения из ветки удалённого репозитория в текущую ветку локального репозитория</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git clone [url-адрес]</span><br>
+                <span class="main__description">Скачивает репозиторий вместе со всей его историей изменений</span>
+            </div>
+        </div>
+        <div class="main__boxignore">
+                <div class="main__box">
+                    <span class="main__git">.gitignore</span><br>
+                    <span class="main__description">Git будет игнорировать файлы и директории, перечисленные в файле .gitignore с помощью wildcard синтаксиса</span>
+                </div>  
+        </div>
+        <h2 class="title-inner">Advanced</h2>
+        <div class="main__inner">
+            <div class="main__box">  
+                <span class="main__git">$ git revert</span><br>
+                <span class="main__description">операция для безопасной отмены изменений, действие которой направлено в будущее</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git reset [файл]</span><br>
+                <span class="main__description">Отменяет индексацию указанного файла, при этом сохраняет его содержимое</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git rebase [файл]</span><br>
+                <span class="main__description">еще один способ перенести изменения из одной ветки в другую</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git cherry-pick</span><br>
+                <span class="main__description">берёт изменения, вносимые одним коммитом, и пытается повторно применить их в виде нового коммита в текущей ветке</span>
+            </div>
+            <div class="main__box">  
+                <span class="main__git">$ git stash</span><br>
+                <span class="main__description">позволяет на время «сдать в архив» (или отложить) изменения, сделанные в рабочей копии, чтобы вы могли применить их позже</span>
+            </div>
+
+        </div>
+            
+            
+
+
+        </main>
+    </div>
+</body>
+</html>
